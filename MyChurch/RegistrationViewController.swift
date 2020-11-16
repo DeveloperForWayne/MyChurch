@@ -12,8 +12,6 @@ class RegistrationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let myContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
         // Do any additional setup after loading the view.
     }
@@ -35,8 +33,9 @@ class RegistrationViewController: UIViewController {
     }
     */
 
-    @IBAction func registePressed(_ sender: Any) {
-        if(usernameTxt.text=="" || passwordTxt.text=="" || nameTxt.text=="" || telephoneTxt=="" || emailTxt.text=="") {
+    // MARK: Actions
+    @IBAction func registerPressed(_ sender: Any) {
+        if(usernameTxt.text=="" || passwordTxt.text=="" || nameTxt.text=="" || telephoneTxt.text=="" || emailTxt.text=="") {
             
             let box = UIAlertController(
                 title: "Input Error",
@@ -49,8 +48,34 @@ class RegistrationViewController: UIViewController {
             self.present(box, animated:true)
             return
         } else {
+            let myContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
             
+            let user = User(context:myContext)
+            user.userName=usernameTxt.text
+            user.password=passwordTxt.text
+            user.telephoneNo=telephoneTxt.text
+            user.name=nameTxt.text
+            user.email=emailTxt.text
+            
+            // save to the database
+            do {
+                try myContext.save()
+                
+                let box = UIAlertController(
+                    title: "Success",
+                    message: "User has been added.",
+                    preferredStyle: .alert
+                )
+                box.addAction(
+                    UIAlertAction(title:"OK", style: .default, handler:nil)
+                )
+                self.present(box, animated:true)
+                return
+            }
+            catch {
+                print("Save to DB error!")
+            }
         }
-        
     }
+
 }
