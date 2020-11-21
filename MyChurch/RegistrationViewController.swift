@@ -37,6 +37,7 @@ class RegistrationViewController: UIViewController {
     @IBAction func registerPressed(_ sender: Any) {
         if(usernameTxt.text=="" || passwordTxt.text=="" || nameTxt.text=="" || telephoneTxt.text=="" || emailTxt.text=="") {
             
+            // Input check
             let box = UIAlertController(
                 title: "Input Error",
                 message: "Please input all items!",
@@ -57,7 +58,7 @@ class RegistrationViewController: UIViewController {
             user.name=nameTxt.text
             user.email=emailTxt.text
             
-            // save to the database
+            // save user to the database
             do {
                 try myContext.save()
                 
@@ -66,6 +67,8 @@ class RegistrationViewController: UIViewController {
                     message: "User has been added.",
                     preferredStyle: .alert
                 )
+                
+                // show finish message
                 box.addAction(
                     UIAlertAction(title:"OK", style: .default, handler:nil)
                 )
