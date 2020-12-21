@@ -1,13 +1,13 @@
 //
-//  SpiritualityViewController.swift
+//  SubscribeViewController.swift
 //  MyChurch
 //
-//  Created by Wei Xu on 2020-11-17.
+//  Created by Wei Xu on 2020-12-19.
 //
 
 import UIKit
 
-class SpiritualityViewController: UIViewController {
+class SubscribeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,13 +1,13 @@
 //
-//  DonationViewController.swift
+//  VideoViewController.swift
 //  MyChurch
 //
-//  Created by Wei Xu on 2020-11-17.
+//  Created by Wei Xu on 2020-12-19.
 //
 
 import UIKit
 
-class DonationViewController: UIViewController {
+class VideoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

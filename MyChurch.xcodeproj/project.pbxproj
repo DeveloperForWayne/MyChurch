@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B002750F259048BD00F9E6FC /* WorshipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B002750E259048BD00F9E6FC /* WorshipViewController.swift */; };
 		B0335C992559E45A00493D79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0335C982559E45A00493D79 /* AppDelegate.swift */; };
 		B0335C9B2559E45A00493D79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0335C9A2559E45A00493D79 /* SceneDelegate.swift */; };
 		B0335C9D2559E45A00493D79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0335C9C2559E45A00493D79 /* ViewController.swift */; };
 		B0335CA02559E45A00493D79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0335C9E2559E45A00493D79 /* Main.storyboard */; };
 		B0335CA32559E45A00493D79 /* MyChurch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B0335CA12559E45A00493D79 /* MyChurch.xcdatamodeld */; };
 		B0335CA52559E45D00493D79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0335CA42559E45D00493D79 /* Assets.xcassets */; };
+		B0512777258EAE2700BBA043 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0512776258EAE2700BBA043 /* HomeViewController.swift */; };
+		B051277E258EAEC900BBA043 /* SubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B051277D258EAEC900BBA043 /* SubscribeViewController.swift */; };
+		B0512781258EAED600BBA043 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0512780258EAED600BBA043 /* VideoViewController.swift */; };
+		B0512784258EAEE700BBA043 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0512783258EAEE700BBA043 /* MeViewController.swift */; };
 		B09B51332564CD1100056535 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B51322564CD1100056535 /* MainTabBarController.swift */; };
-		B0F6FAD72564B9DC002221C0 /* SundayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F6FAD62564B9DC002221C0 /* SundayViewController.swift */; };
-		B0F6FADA2564BA73002221C0 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F6FAD92564BA73002221C0 /* ContactViewController.swift */; };
-		B0F6FADD2564BB53002221C0 /* SpiritualityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F6FADC2564BB53002221C0 /* SpiritualityViewController.swift */; };
-		B0F6FAE02564BBCC002221C0 /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F6FADF2564BBCC002221C0 /* DonationViewController.swift */; };
 		B0FAD3A8255C967C00E1DF2D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FAD3A7255C967C00E1DF2D /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B002750E259048BD00F9E6FC /* WorshipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorshipViewController.swift; sourceTree = "<group>"; };
 		B0335C952559E45A00493D79 /* MyChurch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyChurch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0335C982559E45A00493D79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0335C9A2559E45A00493D79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,11 +32,11 @@
 		B0335CA22559E45A00493D79 /* MyChurch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyChurch.xcdatamodel; sourceTree = "<group>"; };
 		B0335CA42559E45D00493D79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0335CA92559E45D00493D79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0512776258EAE2700BBA043 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B051277D258EAEC900BBA043 /* SubscribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeViewController.swift; sourceTree = "<group>"; };
+		B0512780258EAED600BBA043 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		B0512783258EAEE700BBA043 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		B09B51322564CD1100056535 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
-		B0F6FAD62564B9DC002221C0 /* SundayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SundayViewController.swift; sourceTree = "<group>"; };
-		B0F6FAD92564BA73002221C0 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
-		B0F6FADC2564BB53002221C0 /* SpiritualityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiritualityViewController.swift; sourceTree = "<group>"; };
-		B0F6FADF2564BBCC002221C0 /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
 		B0FAD3A7255C967C00E1DF2D /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,15 +74,16 @@
 				B0335C9A2559E45A00493D79 /* SceneDelegate.swift */,
 				B0335C9C2559E45A00493D79 /* ViewController.swift */,
 				B0335C9E2559E45A00493D79 /* Main.storyboard */,
-				B0F6FADF2564BBCC002221C0 /* DonationViewController.swift */,
-				B0F6FADC2564BB53002221C0 /* SpiritualityViewController.swift */,
+				B002750E259048BD00F9E6FC /* WorshipViewController.swift */,
 				B09B51322564CD1100056535 /* MainTabBarController.swift */,
 				B0FAD3A7255C967C00E1DF2D /* RegistrationViewController.swift */,
 				B0335CA42559E45D00493D79 /* Assets.xcassets */,
 				B0335CA92559E45D00493D79 /* Info.plist */,
 				B0335CA12559E45A00493D79 /* MyChurch.xcdatamodeld */,
-				B0F6FAD62564B9DC002221C0 /* SundayViewController.swift */,
-				B0F6FAD92564BA73002221C0 /* ContactViewController.swift */,
+				B0512776258EAE2700BBA043 /* HomeViewController.swift */,
+				B051277D258EAEC900BBA043 /* SubscribeViewController.swift */,
+				B0512780258EAED600BBA043 /* VideoViewController.swift */,
+				B0512783258EAEE700BBA043 /* MeViewController.swift */,
 			);
 			path = MyChurch;
 			sourceTree = "<group>";
@@ -154,13 +157,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0F6FAE02564BBCC002221C0 /* DonationViewController.swift in Sources */,
-				B0F6FAD72564B9DC002221C0 /* SundayViewController.swift in Sources */,
+				B0512784258EAEE700BBA043 /* MeViewController.swift in Sources */,
 				B09B51332564CD1100056535 /* MainTabBarController.swift in Sources */,
-				B0F6FADA2564BA73002221C0 /* ContactViewController.swift in Sources */,
-				B0F6FADD2564BB53002221C0 /* SpiritualityViewController.swift in Sources */,
+				B002750F259048BD00F9E6FC /* WorshipViewController.swift in Sources */,
+				B051277E258EAEC900BBA043 /* SubscribeViewController.swift in Sources */,
+				B0512781258EAED600BBA043 /* VideoViewController.swift in Sources */,
 				B0335CA32559E45A00493D79 /* MyChurch.xcdatamodeld in Sources */,
 				B0335C9D2559E45A00493D79 /* ViewController.swift in Sources */,
+				B0512777258EAE2700BBA043 /* HomeViewController.swift in Sources */,
 				B0335C992559E45A00493D79 /* AppDelegate.swift in Sources */,
 				B0335C9B2559E45A00493D79 /* SceneDelegate.swift in Sources */,
 				B0FAD3A8255C967C00E1DF2D /* RegistrationViewController.swift in Sources */,
