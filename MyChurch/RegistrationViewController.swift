@@ -10,6 +10,8 @@ import CoreData
 
 class RegistrationViewController: UIViewController {
 
+    let userController = UserController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -49,19 +51,10 @@ class RegistrationViewController: UIViewController {
             self.present(box, animated:true)
             return
         } else {
-            let myContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
             
-            let user = User(context:myContext)
-            user.userName=usernameTxt.text
-            user.password=passwordTxt.text
-            user.telephoneNo=telephoneTxt.text
-            user.name=nameTxt.text
-            user.email=emailTxt.text
+            let result = userController.createUser(username: usernameTxt.text!, password: passwordTxt.text!, telephone: telephoneTxt.text!, name: nameTxt.text!, email: emailTxt.text!)
             
-            // save user to the database
-            do {
-                try myContext.save()
-                
+            if(result == .INSERT_SUCCESS) {
                 let box = UIAlertController(
                     title: "Success",
                     message: "User has been added.",
@@ -74,9 +67,6 @@ class RegistrationViewController: UIViewController {
                 )
                 self.present(box, animated:true)
                 return
-            }
-            catch {
-                print("Save to DB error!")
             }
         }
     }

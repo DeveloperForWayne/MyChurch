@@ -10,6 +10,8 @@ import CoreData
 
 class ViewController: UIViewController {
 
+    let userController = UserController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -37,33 +39,19 @@ class ViewController: UIViewController {
             self.present(box, animated:true)
             return
         } else {
-            let myContext = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+            let count = self.userController.checkUser(username: usernameTxt.text!, password: passwordTxt.text!)
 
-            let request : NSFetchRequest<User> = User.fetchRequest()
-
-            let query = NSPredicate(format: "userName == %@ && password == %@", usernameTxt.text!, passwordTxt.text!)
-
-            request.predicate = query
-
-            do {
-               let results = try myContext.fetch(request)
-    
-                // Check if user is existed
-                if results.count == 0 {
-                    errorMsgTxt.isHidden=false
-                    errorMsgTxt.text="Username or password is incorrect!"
-                }
-                else {
-                    // Move to main view controller
-                    if let tabViewController = self.storyboard?.instantiateViewController(withIdentifier: "mainTabBarCtl") as? UITabBarController {
-                        tabViewController.modalPresentationStyle = .fullScreen
-                        present(tabViewController, animated: true, completion: nil)
-                    }
-                }
-            } catch {
-                    print("User Fetch failed")
+            if count == 0 {
+                errorMsgTxt.isHidden=false
+                errorMsgTxt.text="Username or password is incorrect!"
             }
-           
+            else {
+                // Move to main view controller
+                if let tabViewController = self.storyboard?.instantiateViewController(withIdentifier: "mainTabBarCtl") as? UITabBarController {
+                    tabViewController.modalPresentationStyle = .fullScreen
+                    present(tabViewController, animated: true, completion: nil)
+                }
+            }
         }
     }
 }

@@ -19,6 +19,7 @@
 		B0512781258EAED600BBA043 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0512780258EAED600BBA043 /* VideoViewController.swift */; };
 		B0512784258EAEE700BBA043 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0512783258EAEE700BBA043 /* MeViewController.swift */; };
 		B09B51332564CD1100056535 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09B51322564CD1100056535 /* MainTabBarController.swift */; };
+		B0CB3F9625AE3D18007ABAA7 /* UserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CB3F9525AE3D18007ABAA7 /* UserController.swift */; };
 		B0FAD3A8255C967C00E1DF2D /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FAD3A7255C967C00E1DF2D /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		B0512780258EAED600BBA043 /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		B0512783258EAEE700BBA043 /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		B09B51322564CD1100056535 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		B0CB3F9525AE3D18007ABAA7 /* UserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserController.swift; sourceTree = "<group>"; };
 		B0FAD3A7255C967C00E1DF2D /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 		B0335C972559E45A00493D79 /* MyChurch */ = {
 			isa = PBXGroup;
 			children = (
+				B0CB3F8F25AE3820007ABAA7 /* controllers */,
 				B0335C982559E45A00493D79 /* AppDelegate.swift */,
 				B0335C9A2559E45A00493D79 /* SceneDelegate.swift */,
 				B0335C9C2559E45A00493D79 /* ViewController.swift */,
@@ -86,6 +89,14 @@
 				B0512783258EAEE700BBA043 /* MeViewController.swift */,
 			);
 			path = MyChurch;
+			sourceTree = "<group>";
+		};
+		B0CB3F8F25AE3820007ABAA7 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B0CB3F9525AE3D18007ABAA7 /* UserController.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 				B051277E258EAEC900BBA043 /* SubscribeViewController.swift in Sources */,
 				B0512781258EAED600BBA043 /* VideoViewController.swift in Sources */,
 				B0335CA32559E45A00493D79 /* MyChurch.xcdatamodeld in Sources */,
+				B0CB3F9625AE3D18007ABAA7 /* UserController.swift in Sources */,
 				B0335C9D2559E45A00493D79 /* ViewController.swift in Sources */,
 				B0512777258EAE2700BBA043 /* HomeViewController.swift in Sources */,
 				B0335C992559E45A00493D79 /* AppDelegate.swift in Sources */,
